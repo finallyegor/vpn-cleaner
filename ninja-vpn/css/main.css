@@ -1,0 +1,247 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #070335;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+ul {
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    justify-content: space-around;
+}
+li {
+    text-align: center;
+    list-style-type: none;
+}
+li svg {
+    width: 7.2vw;
+    height: 7.2vw;
+    max-width: 50px;
+    max-height: 50px;
+    fill: #db0000;
+}
+li svg g {
+    fill: #db0000;
+}
+.container {
+    margin: 0 auto;
+}
+.header {
+    margin-top: 30px;
+}
+.notification {
+    text-align: center;
+}
+.notification__title {
+    color: #db0000;
+    font-size: 26px;
+    font-weight: 700;
+    margin-block: auto;
+    margin-bottom: 10px;
+}
+.notification__subtitle {
+    color: #1B871F;
+    margin-block: auto;
+}
+.about {
+    margin-top: 40px;
+}
+.logo img {
+    display: flex;
+    margin: 0 auto;
+    max-width: 45%;
+}
+.logo {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.option__text {
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 13.5px;
+}
+.footer {
+    color: #fff;
+    margin-top: 50px;
+}
+.promo__text {
+    text-align: center;
+    font-size: 14px;
+}
+.promo__text__after {
+    text-align: center;
+    font-size: 11px;
+}
+.promo__btn {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    display: block;
+    background: #d60a0a;
+    width: 183px;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 23px;
+    font-weight: 400;
+    padding: 4px 0px;
+    border-radius: 1.5em;
+    animation: beat 3s infinite alternate;
+    -webkit-animation: beat 3s infinite;
+}
+@-webkit-keyframes beat{
+50% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05)
+    }
+100% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+    }
+}
+@keyframes beat{
+50% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05)
+    }
+100% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+    }
+}
+@media only screen and (min-width:375px) {
+    .notification__title {
+        font-size: 24px;
+    }
+    .notification__subtitle {
+        font-size: 16px;
+    }
+    .logo {
+        margin-bottom: 67px;
+    }
+    .promo__text {
+        font-size: 13.5px;
+        font-weight: 400;
+    }
+    .promo__btn {
+        padding: 5px 0px 5px 0px;
+    }
+    .promo__text__after {
+        font-size: 12px;
+        font-weight: 400;
+    } 
+    .option__text {
+        font-size: 12.5px;
+    }
+    .about {
+        margin-top: 67px;
+    }
+    .footer {
+        margin-top: 80px;
+    }
+}
+@media only screen and (min-width:375px) {
+    .header {
+        margin-top: 60px;
+    }
+}
+@media only screen and (min-height: 810px) {
+    ul {
+        padding: 0px 10px 0px 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .header {
+        margin-top: 80px;
+    }
+    .notification {
+        text-align: center;
+    }
+    .notification__title {
+        color: #FF0909;
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .about {
+        margin-top: 70px;
+    }
+    .logo {
+        position: relative;
+        margin-bottom: 75px;
+    }
+    .logo img {
+        max-width: 60%;
+    }
+    .option__text {
+        color: #fff;
+        text-align: center;
+        font-weight: 400;
+        font-size: 13.5px;
+    }
+    .footer {
+        color: #fff;
+        margin-top: 74px;
+    }
+    .promo__btn {
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        display: block;
+        background: #d60a0a;
+        width: 225px;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 23px;
+        font-weight: 400;
+        padding: 10px 0px 10px 0px;
+        border-radius: 1.5em;
+        animation: beat 3s infinite alternate;
+        -webkit-animation: beat 3s infinite;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .logo::after, .logo::before {
+        left: 422px;
+    }
+    .notification__title {
+        font-size: 32px;
+    }
+    .notification__subtitle {
+        font-size: 16px;
+    }
+    .logo {
+        margin-top: 90px;
+    }
+    .option__text {
+        font-size: 12.5px;
+    }
+    .option {
+        margin-top: 200px;
+        margin-bottom: 100px;
+    }
+    .promo__text {
+        font-size: 17px;
+    }
+    .promo__btn {
+        padding: 10px 0px 10px 0px;
+    }
+    .promo__text__after {
+        font-size: 15px;
+    }
+    .footer {
+        margin-top: 30px;
+    }
+}
